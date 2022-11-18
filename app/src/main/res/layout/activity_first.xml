@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <TextView
+        android:id="@+id/tv_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="예진"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/tv_first_nim"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_first_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="님!"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_first_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_first_hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="반가워요!"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tv_first_nim"
+        app:layout_constraintStart_toStartOf="@id/tv_first_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_name" />
+
+    <TextView
+        android:id="@+id/tv_first_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="76dp"
+        android:text="예진"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_hi" />
+
+    <TextView
+        android:id="@+id/tv_first_nim2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="님의"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_first_name2"
+        app:layout_constraintStart_toEndOf="@id/tv_first_name2"
+        app:layout_constraintTop_toTopOf="@id/tv_first_name2" />
+
+    <TextView
+        android:id="@+id/tv_first_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="최근 관심사를 모두 골라주세요!"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_first_name2"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_name2" />
+
+    <TextView
+        android:id="@+id/tv_first_pick2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="해당 관심사에 따라 추천 게시물이 달라져요"
+        android:textColor="#4F8EEC"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@id/tv_first_pick"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_pick" />
+
+    <ImageView
+        android:id="@+id/iv_first_energy"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/energy"
+        app:layout_constraintEnd_toStartOf="@id/iv_first_recycle"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_pick2" />
+
+    <TextView
+        android:id="@+id/tv_first_energy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="에너지"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_first_energy"
+        app:layout_constraintStart_toStartOf="@id/iv_first_energy"
+        app:layout_constraintTop_toBottomOf="@id/iv_first_energy" />
+
+    <ImageView
+        android:id="@+id/iv_first_recycle"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/recycle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_first_energy"
+        app:layout_constraintEnd_toStartOf="@id/iv_first_ecofriendly"
+        app:layout_constraintStart_toEndOf="@id/iv_first_energy"
+        app:layout_constraintTop_toTopOf="@id/iv_first_energy" />
+
+    <TextView
+        android:id="@+id/tv_first_recycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="업사이클링"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_first_recycle"
+        app:layout_constraintStart_toStartOf="@id/iv_first_recycle"
+        app:layout_constraintTop_toBottomOf="@id/iv_first_recycle" />
+
+    <ImageView
+        android:id="@+id/iv_first_ecofriendly"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/ecofriendly"
+        app:layout_constraintBottom_toBottomOf="@id/iv_first_recycle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_first_recycle"
+        app:layout_constraintTop_toTopOf="@id/iv_first_recycle" />
+
+    <TextView
+        android:id="@+id/tv_first_ecofriendly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="친환경제품"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_first_ecofriendly"
+        app:layout_constraintStart_toStartOf="@id/iv_first_ecofriendly"
+        app:layout_constraintTop_toBottomOf="@id/iv_first_ecofriendly" />
+
+    <ImageView
+        android:id="@+id/iv_first_vegetarian"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/vegetarian"
+        app:layout_constraintEnd_toStartOf="@id/iv_first_cosmetics"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_energy" />
+
+    <TextView
+        android:id="@+id/tv_first_vegetarian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="(비건)채식"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_first_vegetarian"
+        app:layout_constraintStart_toStartOf="@id/iv_first_vegetarian"
+        app:layout_constraintTop_toBottomOf="@id/iv_first_vegetarian" />
+
+    <ImageView
+        android:id="@+id/iv_first_cosmetics"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/cosmetics"
+        app:layout_constraintBottom_toBottomOf="@id/iv_first_vegetarian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_first_vegetarian"
+        app:layout_constraintTop_toTopOf="@id/iv_first_vegetarian" />
+
+    <TextView
+        android:id="@+id/tv_first_cosmetics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="(비건)화장품"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/iv_first_cosmetics"
+        app:layout_constraintStart_toStartOf="@id/iv_first_cosmetics"
+        app:layout_constraintTop_toBottomOf="@id/iv_first_cosmetics" />
+
+    <Button
+        android:id="@+id/btn_first_plus"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_basicbtn2"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="56dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="추가 정보 입력하기"
+        app:layout_constraintTop_toBottomOf="@id/tv_first_cosmetics"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_first_next"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_basicbtn"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="56dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="다음으로 넘어가기"
+        app:layout_constraintTop_toBottomOf="@id/btn_first_plus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
