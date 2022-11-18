@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Greme">
         <activity
+            android:name=".MoreInformationActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".FirstActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".IdActivity"
             android:exported="true">
             <intent-filter>
@@ -23,9 +33,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
